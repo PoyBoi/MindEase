@@ -2,9 +2,10 @@
 ## - For the Prediction Model
 1) ~Add word doc to repo~
 2) ~Find out the basic data points for the dataset~
-3) Start surveying people
-4) Get atleast 50 column entries
-5) Make a model that predicts the illness based off data points
+3) Make a questionare for the data input (training)
+4) Start surveying people
+5) Get atleast 50 column entries
+6) Make a model that predicts the illness based off data points
 
 ## - For the NLP
 1) Find out whether to use new or old model for the talking part
