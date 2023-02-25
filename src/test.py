@@ -1,4 +1,4 @@
-from .lib.dependancies import *
+from ..lib.dependancies import *
 
 # sentiment_pipeline = pipeline("sentiment-analysis")
 # specific_model = pipeline(model="finiteautomata/bertweet-base-sentiment-analysis")
