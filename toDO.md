@@ -14,7 +14,13 @@
 ## - For the input understanding 
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
-3) 
+
+
+## Project To-do's:
+1) https://huggingface.co/blog/sentiment-analysis-python; 
+2) Start with tokenisation ideation and how to work with it
+3) Make a model that predicts depression and other stuff based on rating on the emotion scale
+4) Start on the NLP front for making believeable conversations, implent ideas from todolist app
 
 
 ## - Database Metrics:
