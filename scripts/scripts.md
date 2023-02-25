@@ -1,0 +1,1 @@
+should contain files that will be used for automation purposes
