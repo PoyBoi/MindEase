@@ -22,7 +22,7 @@
 3) Make a model that predicts depression and other stuff based on rating on the emotion scale
 4) Start on the NLP front for making believeable conversations, implent ideas from todolist app
 
-## Databases found till now
+## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
 2) https://data.world/datasets/depression (each link has a source file inside)
 3) https://datasets.simula.no/depresjon/
