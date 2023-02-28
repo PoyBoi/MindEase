@@ -22,6 +22,18 @@
 3) Make a model that predicts depression and other stuff based on rating on the emotion scale
 4) Start on the NLP front for making believeable conversations, implent ideas from todolist app
 
+## Databases found till now
+1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
+2) https://data.world/datasets/depression (each link has a source file inside)
+3) https://datasets.simula.no/depresjon/
+4) https://paperswithcode.com/task/depression-detection (Imp to look at, uses speech data to pred)
+5) https://www.nature.com/articles/s41597-022-01211-x (Uses brainwaves and speech analysis)
+6) https://www.hindawi.com/journals/cin/2022/5731532/ (Isn't this what we are doing ?)
+7) https://github.com/kharrigian/mental-health-datasets (Dataset Megadoc)
+8) https://link.springer.com/article/10.1007/s00521-021-06426-4 (Paper on Deep Learning and RNN to detect depression on text based)
+9) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8675644/ (Child depression detection using ML, uses the YMM dataset)
+10) #
+
 
 ## - Database Metrics:
 
