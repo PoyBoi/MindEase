@@ -21,6 +21,7 @@
 2) Start with tokenisation ideation and how to work with it
 3) Make a model that predicts depression and other stuff based on rating on the emotion scale
 4) Start on the NLP front for making believeable conversations, implent ideas from todolist app
+5) Need to download tf.model.h5, it's 1 gig
 
 ## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
