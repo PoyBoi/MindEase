@@ -35,14 +35,14 @@
 9) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8675644/ (Child depression detection using ML, uses the YMM dataset)
 10)
 
-##Project Pre-Requisites:
+## Project Pre-Requisites:
 1) Text Preprocessing: This involves cleaning, tokenizing, and normalizing the text to remove any noise, stop words, punctuation, and convert the text to a standardized format.
 2) Feature Extraction: In this step, you will need to convert the preprocessed text into numerical representations (features) that can be used by the machine learning algorithms. Common methods for feature extraction in NLP include Bag of Words, TF-IDF, Word2Vec, and GloVe.
 3) Machine Learning Algorithms: You will need to be familiar with different ML algorithms such as Decision Trees, Naive Bayes, Logistic Regression, and Neural Networks. You will also need to know how to train, validate, and test these models.
 4) Evaluation Metrics: You will need to be able to evaluate the performance of your machine learning models using metrics such as accuracy, precision, recall, F1-score, and confusion matrix.
 5) Dataset Creation: You will need to have a dataset of conversations between people with and without depression to train your model. You will also need to ensure that your dataset is balanced, representative, and annotated correctly.
 
-##Courses:
+## Courses:
 
 To get started with these topics, you can take online courses such as "Natural Language Processing with Python" by NLTK, "Applied Machine Learning" by Coursera, "Machine Learning A-Z" by Udemy, or "Deep Learning Specialization" by Coursera.
 
