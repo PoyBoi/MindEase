@@ -45,7 +45,9 @@
 ## Courses:
 
 To get started with these topics, you can take online courses such as "Natural Language Processing with Python" by NLTK, "Applied Machine Learning" by Coursera, "Machine Learning A-Z" by Udemy, or "Deep Learning Specialization" by Coursera.
-
+1) https://in.coursera.org/learn/machine-learning
+2) https://in.coursera.org/specializations/deep-learning#courses
+3) https://in.coursera.org/specializations/data-science-python#courses
 
 ## - Database Metrics:
 
