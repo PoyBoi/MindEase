@@ -7,6 +7,7 @@ import lib.dependancies as dependancies
 # print(specific_model(data))
 
 classifier = dependancies.pipeline("text-classification",model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
+classifierDep = dependancies.pipeline("sentiment-analysis", model= "cardiffnlp/twitter-xlm-roberta-base-sentiment", tokenizer= "cardiffnlp/twitter-xlm-roberta-base-sentiment", return_all_scores=True)
 
 inputData = """
 I'm not really sure what's going on with me lately. I just feel so...off. Like something isn't quite right, but I can't put my finger on it.
@@ -21,5 +22,31 @@ I don't know if what I'm feeling is depression or if it's something else entirel
 
 It's all just really confusing and overwhelming right now. I wish I could figure out what's going on in my head and heart, but for now, I'll just keep trying to take things one day at a time.
 """
-prediction = classifier(inputData)
-print(prediction)
+
+text = [
+    "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.",
+    "Life is a journey, and if you fall in love with the journey, you will be in love forever.",
+    "We are all in the gutter, but some of us are looking at the stars.",
+    "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
+    "The best way to predict your future is to create it.",
+    "We do not remember days, we remember moments.",
+    "I have not failed. I've just found 10,000 ways that won't work.",
+    "The only thing necessary for the triumph of evil is for good men to do nothing.",
+    "Happiness is not something ready made. It comes from your own actions.",
+    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."
+]
+
+textClassified = []
+
+for i in text:
+    try:
+        temp = classifierDep(i)
+        textClassified.append({"Quote: ": i, "analysis: ":temp})
+    except:
+        pass
+
+# for i in textClassified:
+#     print(i, "\n")
+
+#Need to download tf.model.h5, it's 1 gig
