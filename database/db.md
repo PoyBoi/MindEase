@@ -1,8 +1,10 @@
-The two main datasets that we have considered for this project are :
+The main datasets that we have referenced for this project are :
 1) Adult Depression (LGHC Indicator) [https://data.world/chhs/5a281abf-1730-43b0-b17b-ac6a35db5760]
-2) 
+2) Deep learning for prediction of depressive symptoms in a large textual dataset [https://link.springer.com/article/10.1007/s00521-021-06426-4]
 
 
 We considered merging these databases into one however, we noticed that the integrity of the data and the accuracy of the training model would be more difficult to maintain. Keeping the the databases separate allows us to select and tune the features of the model more effectively and reduces the risk of an erroneous model due to lack of data integrity.
 
 The code will also reference another paper written by Heinrich Dinkel on "Text-based depression detection on sparse data" (https://paperswithcode.com/paper/text-based-depression-detection-what-triggers). We beleive this study will be beneficial in creating an effective model and assist with model predictions and assistance by analyzing the subtle cues users will drop in chat. We intend to reference the study's approach to real-world approach to context-aware detection of depression by using pretrained contextual sentence embeddings with the usage of certain keywords.
+
+Another key dataset and journal we are referencing is the "Deep learning for prediction of depressive symptoms in a large textual dataset", compiled by Md Zia Uddin, et al. ( https://rdcu.be/c7KR2 ). This journal further helps us understand the use and context of certain keywords that highlight depressive tones in regular conversation. Additionally, it also highlights the disparity in accuracy between traditional machine learning approaches using different features (i.e., typical one-hot, TF-IDF, and proposed features) with other conventional machine learning algorithms (i.e., logistic regression, decision trees, support vector machines (SVM), typical large artificial neural network (ANN), DBN, and CNN) (https://link.springer.com/article/10.1007/s00521-021-06426-4#Tab12). The journal's approach to the this project is by applying a RNN to cross validate the robust-features  based on LSTM, attention, and dense layers for modelling and decoding the various the emotional states(https://link.springer.com/article/10.1007/s00521-021-06426-4#Tab12).
