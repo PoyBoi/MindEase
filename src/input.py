@@ -6,9 +6,6 @@ import lib.dependancies as dependancies
 # print(sentiment_pipeline(data))
 # print(specific_model(data))
 
-classifier = dependancies.pipeline("text-classification",model='bhadresh-savani/distilbert-base-uncased-emotion', return_all_scores=True)
-classifierDep = dependancies.pipeline("sentiment-analysis", model= "cardiffnlp/twitter-xlm-roberta-base-sentiment", tokenizer= "cardiffnlp/twitter-xlm-roberta-base-sentiment", return_all_scores=True)
-
 inputData = """
 I'm not really sure what's going on with me lately. I just feel so...off. Like something isn't quite right, but I can't put my finger on it.
 
@@ -36,17 +33,3 @@ text = [
     "Happiness is not something ready made. It comes from your own actions.",
     "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."
 ]
-
-textClassified = []
-
-for i in text:
-    try:
-        temp = classifierDep(i)
-        textClassified.append({"Quote: ": i, "analysis: ":temp})
-    except:
-        pass
-
-# for i in textClassified:
-#     print(i, "\n")
-
-#Need to download tf.model.h5, it's 1 gig

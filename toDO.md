@@ -22,6 +22,9 @@
 3) Make a model that predicts depression and other stuff based on rating on the emotion scale
 4) Start on the NLP front for making believeable conversations, implent ideas from todolist app
 5) Need to download tf.model.h5, it's 1 gig
+6) Need to make a listed dictionary of emotions based on their importance per inputText, and then sort them, and be able to show the topmost emotion as the prevalant emotion
+7) Figurew out how to associate words with emotions and then make a wordcloud of the most common words associated with the emotion
+8) Make a wordcloud of the main words associated with positive and negative emotions in that specific text
 
 ## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
