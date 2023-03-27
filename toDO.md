@@ -26,6 +26,7 @@
 7) Figure out the iteration scenario with the input model and sort out the situation with the scoresList (We can instead just call the function on an interation)
 8) Figure out how to associate words with emotions and then make a wordcloud of the most common words associated with the emotion
 9) Make a wordcloud of the main words associated with positive and negative emotions in that specific text 
+10) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation
 
 ## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
