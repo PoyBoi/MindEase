@@ -28,6 +28,22 @@
 9) Make a wordcloud of the main words associated with positive and negative emotions in that specific text 
 10) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation
 
+## In Project:
+### In /SRC:
+#### <analysis> 
+1) Need to clean up the code, make it more readable and understandable, remove the unnecessary comments
+2) Figure out how to get neccessary items from the list that is returned
+3) Try to make the code more optimised, it's too cluttered and slow as of now
+4) Understand how to go forward with the dataFrame workflow of the list that is returned, and how to visualise it with wordcloud
+5) Configure wordcloud
+#### <test> 
+1) Use it for dump commands and testing
+#### <input>
+1) Try to add more text for the analysis to see how the output works out
+### In /plugins:
+1) Try making a new plugin for each redudant piece of code that is there in the form of comments to make sure it works
+2) Don't forget to import this plugin folder into the main src folder
+
 ## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
 2) https://data.world/datasets/depression (each link has a source file inside)
