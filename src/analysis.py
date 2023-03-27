@@ -6,9 +6,11 @@ classifier = dependancies.pipeline("text-classification",model='bhadresh-savani/
 
 # -> Sentimental Analysis
 
-inputData = inp.text
-# inputData = inp.inputData
-# inputData = "Hey, hi, how are you doing?, I am fine, I love you"
+inputData = (
+    inp.text
+    # inp.inputData
+    # "Hey, hi, how are you doing?, I am fine, I love you"
+)
 
 # -> This block of code is used to sort the list of dictionaries based on the score value 
 def classifyingText(inputData, mode):
@@ -48,11 +50,8 @@ def classifyingText(inputData, mode):
                         scoresList.append(tempDict)
             # print(scoresList)
             textClassified[p] = scoresList
-
             # # -> This block of code is used to print the main emotion conveyed by the message
             # print("The main emotion conveyed by this message was", scoresList[0]["label"], "with a score of", scoresList[0]["score"])
-
-            # print(textClassified[0][p])
             scores, scoresList = [], []
 
 # How to reach a specific value of emotion in a specific quote :
