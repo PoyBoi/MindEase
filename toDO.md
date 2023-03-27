@@ -5,7 +5,7 @@
 3) Make a questionare for the data input (training)
 4) Start surveying people
 5) Get atleast 50 column entries
-6) Make a model that predicts the illness based off data points
+6) Make a model that predicts the illness based off data points, and for this i think random forest might be the best bet going forward, it basically is decision tree but better, and we need a model that would use mutliple and not so well connected data points to work well together, and RF does it best for us
 
 ## - For the NLP
 1) Find out whether to use new or old model for the talking part
