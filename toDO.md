@@ -30,15 +30,15 @@
 
 ## In Project:
 ### In /SRC:
-#### <analysis> 
+#### analysis ~
 1) Need to clean up the code, make it more readable and understandable, remove the unnecessary comments
 2) Figure out how to get neccessary items from the list that is returned
 3) Try to make the code more optimised, it's too cluttered and slow as of now
 4) Understand how to go forward with the dataFrame workflow of the list that is returned, and how to visualise it with wordcloud
 5) Configure wordcloud
-#### <test> 
+#### test ~
 1) Use it for dump commands and testing
-#### <input>
+#### input ~
 1) Try to add more text for the analysis to see how the output works out
 ### In /plugins:
 1) Try making a new plugin for each redudant piece of code that is there in the form of comments to make sure it works
