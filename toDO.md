@@ -22,6 +22,50 @@
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
 
+## - How to work on privacy of data collected
+When collecting data from a chat conversation to feed into an AI-based counselor, it's important to collect only the minimum amount of data necessary to provide the counselor's functionality. Here are some ways you can do this:
+
+1. Identify key data points: Determine which data points are necessary for the counselor to provide effective advice or support. For example, if the counselor is providing mental health support, you may only need to collect information about the user's mood, stress level, and sleep patterns.
+
+2. Use pre-defined response options: Use pre-defined response options or buttons to collect user data, rather than open-ended questions that may result in unnecessary data. For example, you can ask users to rate their mood on a scale of 1 to 10, rather than asking them to describe their mood in detail.
+
+3. Filter out irrelevant data: Use natural language processing (NLP) techniques to filter out irrelevant data from the conversation. For example, you can use sentiment analysis to filter out messages that are not related to the user's mood or stress level.
+
+4. Collect data in real-time: Collect data in real-time during the conversation, rather than collecting all data at the end of the conversation. This can help you to collect only the necessary data points and avoid collecting unnecessary or irrelevant data.
+
+5. Anonymize user data: Anonymize user data as much as possible to protect user privacy. For example, you can use unique identifiers instead of usernames or personal information to track user conversations.
+
+By following these best practices, you can help to ensure that you are collecting only the necessary data from chat conversations to feed into your AI-based counselor, while also protecting user privacy and building user trust.
+
+## - How to work on the encryption of data collected
+If you are feeding data to me for chatbot purposes, there are a few ways to implement encryption to protect the data:
+
+1. Transport Layer Security (TLS): Use TLS to encrypt data in transit between your server and mine. This will help to prevent any interception or eavesdropping on the communication channel.
+
+2. Encrypt data at rest: If you need to store user data, you can encrypt it at rest using a symmetric or asymmetric encryption algorithm. This will ensure that the data is protected even if the storage media is compromised.
+
+3. Hash sensitive data: If you need to store sensitive data like passwords, you can hash the data using a one-way hashing algorithm like SHA-256 or bcrypt. This will help to protect the passwords in case of a data breach.
+
+4. Use secure APIs: When communicating with me, use secure APIs that require authentication and authorization. This will ensure that only authorized parties can access the data.
+
+It's important to note that encryption can add processing overhead and may impact performance, so it's important to consider the trade-offs between security and performance when implementing encryption.
+
+## - Services to use for dB:
+There are several services that you can use for secure storage of login details and user data. Here are some options:
+
+### Login details:
+1. Amazon Web Services (AWS) provides several secure database services, including Amazon RDS and Amazon DynamoDB, which can be used to securely store login details.
+2. Google Cloud Platform (GCP) also provides secure database services like Google Cloud SQL and Google Cloud Firestore.
+3. Microsoft Azure offers several secure database services, including Azure SQL Database and Azure Cosmos DB.
+
+### User data:
+1. AWS provides secure storage services like Amazon S3 and Amazon Glacier that can be used to store user data.
+2. GCP offers several secure storage options like Google Cloud Storage and Google Cloud Bigtable.
+3. Microsoft Azure provides secure storage services like Azure Blob Storage and Azure Data Lake Storage.
+
+In addition to these cloud-based storage options, there are also other third-party storage providers like MongoDB Atlas, Firebase, and DigitalOcean that provide secure storage services.
+
+It's important to evaluate each service based on your specific needs and requirements, including factors like data volume, performance, scalability, and cost. Additionally, you should also consider the security features and certifications offered by each service to ensure that they meet your security standards.
 
 ## Project To-do's:
 1) ~https://huggingface.co/blog/sentiment-analysis-python;~
