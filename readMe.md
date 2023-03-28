@@ -60,6 +60,10 @@ We need to find the target illnesses first, then we need to work our way to up b
 3. Build your own integration: If you have more technical expertise, you can build your own integration using the OpenAI API. This will require more coding knowledge and familiarity with APIs and web services.
 
 4. Keep in mind that we have only 100,000 API calls per month in the free tier. If you need more API calls, you can upgrade to a paid plan.
+  
+5. In general, the attribution should include the OpenAI logo and a statement that your project is "Powered by OpenAI." You may also be required to include additional attribution depending on the type and frequency of your usage.
+  
+6. Yes, I can remember the context of conversations during API calls, allowing me to maintain a consistent and coherent dialogue with users over multiple turns. To achieve this, you can pass in previous conversations or chat history as context to each API call. This context can be in the form of text or structured data, depending on your project's needs. By providing context, I can use the information from previous interactions to generate more personalized and relevant responses. This can be especially useful in a chatbot scenario where the conversation may span multiple turns and topics.
  
 # Research Area:
 
