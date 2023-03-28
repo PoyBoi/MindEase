@@ -17,6 +17,7 @@
 >around the OpenAI API to further modify and tailor the responses you receive. Overall, the OpenAI API provides a lot of flexibility 
 >and customization options, so you can integrate me in a way that best meets the needs of your project. If you have specific 
 >requirements or questions about how to modify my behavior, feel free to ask and I'll do my best to assist you.
+4) In general, the attribution should include the OpenAI logo and a statement that your project is "Powered by OpenAI." You may also be required to include additional attribution depending on the type and frequency of your usage.
 
 ## - For the input understanding 
 1) Train the model to understand certain keywords
