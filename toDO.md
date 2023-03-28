@@ -17,7 +17,6 @@
 >around the OpenAI API to further modify and tailor the responses you receive. Overall, the OpenAI API provides a lot of flexibility 
 >and customization options, so you can integrate me in a way that best meets the needs of your project. If you have specific 
 >requirements or questions about how to modify my behavior, feel free to ask and I'll do my best to assist you.
-4) We'll have access to GPT's contextualization skill, but i think we need to have a history-keeping mechanism of our own that logs chats
 
 ## - For the input understanding 
 1) Train the model to understand certain keywords
