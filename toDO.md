@@ -10,6 +10,13 @@
 ## - For the NLP
 1) Find out whether to use new or old model for the talking part
 2) Find dataset to train off of
+3) Use chatGPT's API to make the chatbot, it says that we can modify the APi call to fit our needs, paraphrasing:
+>For example, you can control the length and type of responses, the amount of context I use to generate responses, and the level of 
+>creativity or randomness in my responses. You can also fine-tune my language generation by providing specific prompts or examples that 
+>I can learn from. Additionally, you can use programming languages such as Python or JavaScript to create custom scripts or wrappers 
+>around the OpenAI API to further modify and tailor the responses you receive. Overall, the OpenAI API provides a lot of flexibility 
+>and customization options, so you can integrate me in a way that best meets the needs of your project. If you have specific 
+>requirements or questions about how to modify my behavior, feel free to ask and I'll do my best to assist you.
 
 ## - For the input understanding 
 1) Train the model to understand certain keywords
