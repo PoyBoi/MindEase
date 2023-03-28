@@ -43,6 +43,8 @@
 ### In /plugins:
 1) Try making a new plugin for each redudant piece of code that is there in the form of comments to make sure it works
 2) Don't forget to import this plugin folder into the main src folder
+### For the chatBot:
+1) Try to use openAI's API to have the insertion for the chatbot
 
 ## Databases // Reading Sources
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
@@ -54,7 +56,6 @@
 7) https://github.com/kharrigian/mental-health-datasets (Dataset Megadoc)
 8) https://link.springer.com/article/10.1007/s00521-021-06426-4 (Paper on Deep Learning and RNN to detect depression on text based)
 9) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8675644/ (Child depression detection using ML, uses the YMM dataset)
-10)
 
 ## Project Pre-Requisites:
 1) Text Preprocessing: This involves cleaning, tokenizing, and normalizing the text to remove any noise, stop words, punctuation, and convert the text to a standardized format.
