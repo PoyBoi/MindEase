@@ -60,14 +60,14 @@ textClassified, scores, scoreList,  maxEmotion, scoresList = {}, [], [], [], []
 
 # This block is used to set the the input
 inputData = (
-    inp.text
-    # inp.inputData
+    # inp.text
+    inp.inputData
     # "Hey, hi, how are you doing?, I am fine, I love you"
 )
 
 classifyingText(inputData, # Calling the function
-                "multiple" # You can change the modes here
-                # "single"
+                # "multiple" # You can change the modes here
+                "single"
                 )
 
 listText = [i for i in textClassified] # Turning it into a Panda's DataFrame
