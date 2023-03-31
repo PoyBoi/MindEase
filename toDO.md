@@ -22,6 +22,7 @@
 ## - For the input understanding 
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
+3) Make different and solo definitions out of each function, so that it helps in the expansion of the code
 
 ## - How to work on privacy of data collected
 When collecting data from a chat conversation to feed into an AI-based counselor, it's important to collect only the minimum amount of data necessary to provide the counselor's functionality. Here are some ways you can do this:
