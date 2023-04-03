@@ -1,0 +1,300 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.desktop1-desktop1 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-color: transparent;
+    background-color: rgba(243, 229, 229, 1);
+  }
+  .desktop1-image1 {
+    top: 176px;
+    left: 55%;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    border-color: transparent;
+  }
+  .desktop1-image2 {
+    top: 44px;
+    left: 1329px;
+    width: 39px;
+    height: 47px;
+    position: absolute;
+    border-color: transparent;
+  }
+  .desktop1-text {
+    top: 66px;
+    left: 1203px;
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .desktop1-rectangle5 {
+    top: 66px;
+    left: 900px;
+    width: 287px;
+    height: 25px;
+    position: absolute;
+  }
+  .desktop1-group1 {
+    top: 66px;
+    left: 463px;
+    width: 160px;
+    height: 25px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(218, 153, 153, 0.27000001072883606);
+    border-radius: 15px;
+  }
+  .desktop1-text02 {
+    left: 41.81817626953125px;
+    color: rgba(30, 30, 30, 1);
+    width: 76px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-group2 {
+    top: 66px;
+    left: 268px;
+    width: 160px;
+    height: 25px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(218, 153, 153, 0.27000001072883606);
+    border-radius: 15px;
+  }
+  .desktop1-text04 {
+    left: 34.54545593261719px;
+    color: rgba(30, 30, 30, 1);
+    width: 91px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-group3 {
+    top: 66px;
+    left: 73px;
+    width: 160px;
+    height: 25px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(218, 153, 153, 0.27000001072883606);
+    border-radius: 15px;
+  }
+  .desktop1-text06 {
+    left: 47.272727966308594px;
+    color: rgba(30, 30, 30, 1);
+    width: 65px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-text08 {
+    top: 180px;
+    left: 73px;
+    color: rgba(30, 30, 30, 1);
+    height: auto;
+    position: absolute;
+    font-size: 80px;
+    align-self: auto;
+    font-style: Semi Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .desktop1-text09 {
+    font-weight: 700;
+  }
+  .desktop1-text14 {
+    top: 420px;
+    left: 73px;
+    color: rgba(0, 0, 0, 1);
+    width: 635px;
+    height: auto;
+    position: absolute;
+    font-size: 27px;
+    align-self: auto;
+    font-style: Light;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 300;
+    line-height: normal;
+    font-stretch: normal;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-decoration: none;
+  }
+  .desktop1-group4 {
+    top: 695px;
+    left: 73px;
+    width: 143px;
+    height: 25px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(218, 153, 153, 0.27000001072883606);
+    border-radius: 15px;
+  }
+  .desktop1-text16 {
+    top: 4.6875px;
+    left: 21.870582580566406px;
+    color: rgba(0, 0, 0, 1);
+    width: 89px;
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-group5 {
+    top: 833px;
+    left: 179px;
+    width: 423px;
+    height: 68px;
+    display: flex;
+    padding: 0;
+    position: absolute;
+    align-self: auto;
+    box-sizing: border-box;
+    align-items: flex-start;
+    flex-shrink: 1;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0;
+    margin-right: 0;
+    border-radius: 0px 0px 0px 0px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgba(218, 153, 153, 0.27000001072883606);
+    border-radius:305px;
+  }
+  .desktop1-text18 {
+    top: 18px;
+    left: 117px;
+    color: rgba(0, 0, 0, 1);
+    width: 193px;
+    height: auto;
+    position: absolute;
+    font-size: 30px;
+    align-self: auto;
+    font-style: Regular;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  .signup{
+    margin-top: 65px;
+    margin-left: 1250px;
+    color: black;
+  }
