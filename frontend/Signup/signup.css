@@ -1,0 +1,179 @@
+body {
+	background-color: #F3E5E5;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+   
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.left {
+    margin-top: 4.5%;
+    margin-left: 85px;
+	background-color: #F3E5E5;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: top;
+	padding: 20px;
+}
+
+.bird1 {
+    top: 200px;
+    left: 600px;
+    width: 61px;
+    height: 73px;
+    position: absolute;
+    border-color: transparent;
+  }
+
+.right {
+	/* margin-right: 35%; */
+	padding-right: 30%;
+	background-color: #F2E5DC;
+	
+}
+
+.rt{
+
+	font-size: 50px;
+	margin-top: 20%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: top;
+	padding: 20px;
+	padding-right: 20%;
+	padding-top: 40%;
+	line-height: 65px;
+	/* padding-left: 10%; */
+}
+
+h1 {
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 36px;
+	font-weight: bold;
+	color: black;
+}
+.signup{
+    margin-top: 5%;
+}
+
+input[type="text"], input[type="password"] {
+	width: 30%;
+	padding: 10px;
+	padding-left: 20px;
+	padding-top: 12px;
+	margin-bottom: 10px;
+	border-radius: 50px;
+	border: none;
+	background-color: #F8CECE;
+	color: #ffffff;
+}
+
+#input2{
+    margin-left: 4%;
+}
+#input3{
+    margin-top: 2%;
+    width: 45%;
+}
+#input4{
+    margin-top: 2%;
+    width: 66.5%;
+}
+#input5{
+    margin-top: 2%;
+    width: 45%;
+}
+#input6{
+    margin-top: 2%;
+    width: 45%;
+}
+#input7{
+    margin-top: 6%;
+    margin-left: 30%;
+    
+    
+}
+#input8{
+    margin-top: 6%;
+    margin-left: 4%;
+    
+    
+}
+
+
+input::placeholder{
+	font-size: 20px;
+    color: #ffffff;
+	justify-content: center;
+}
+
+input[type="submit"] {
+	font-size: 24px;
+	background-color: #FF8F8F;
+	color: white;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: none;
+	border-radius:30px;
+	cursor: pointer;
+}
+
+.bird2 {
+    top: 650px;
+    /* left: 846.5830078125px; */
+    left: 47%;
+    width: 128px;
+    height: 125px;
+    position: absolute;
+    border-color: transparent;
+	transform: scaleX(-1);
+  }
+
+.text {
+	margin-top: 50px;
+	font-size: 24px;
+	line-height: 1.5;
+	text-align: center;
+	color: black;
+}
+
+.text span {
+	display: block;
+}
+
+.normal {
+    font-size: 3.5rem;
+    margin-left: 0;
+    /* margin-top: 40%; */
+    top: 40%;
+	font-weight: normal;    
+}
+
+h4{
+	margin: 0;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+.plant {
+    top: 511px;
+    left: 1270px;
+    width: 240px;
+    height: 290px;
+	aspect-ratio: 3/2;
+    position: absolute;
+    border-color: transparent;
+  }
