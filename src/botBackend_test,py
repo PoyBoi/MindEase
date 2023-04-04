@@ -1,0 +1,9 @@
+from transformers import BlenderbotTokenizer, TFBlenderbotForConditionalGeneration
+
+#download and setup the model and tokenizer
+model_name = 'facebook/blenderbot-400M-distill'
+#instantiate the tokenizer and the model itself on the model name.
+tokenizer = BlenderbotTokenizer.from_pretrained(model_name)
+model = TFBlenderbotForConditionalGeneration.from_pretrained(model_name)
+
+# Have to install tf.model_h5 (1.5gb)
