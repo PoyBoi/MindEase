@@ -12,7 +12,7 @@ classifier = dependancies.pipeline(
 
 # -> Sentimental Analysis
 # This block of code is used to sort the list of dictionaries based on the score value 
-# There has to be a better wayo to make this more optimized, but this works for now
+# There has to be a better way to make this more optimized, but this works for now
 def classifyingText(inputData, mode):
 
     global scores, scoreList, textClassified # Settoing the global variables so they can be called outside the function
@@ -60,14 +60,14 @@ textClassified, scores, scoreList,  maxEmotion, scoresList = {}, [], [], [], []
 
 # This block is used to set the the input
 inputData = (
-    inp.text
-    # inp.inputData
+    # inp.text
+    inp.inputData
     # "Hey, hi, how are you doing?, I am fine, I love you"
 )
 
 classifyingText(inputData, # Calling the function
-                "multiple" # You can change the modes here
-                # "single"
+                # "multiple" # You can change the modes here
+                "single"
                 )
 
 listText = [i for i in textClassified] # Turning it into a Panda's DataFrame
@@ -97,10 +97,11 @@ dataset = dependancies.pd.DataFrame( # Creating the dataframe
         emotionList[4] : scoresList[4],
         emotionList[5] : scoresList[5],
         "Emotion" : maxEmotion
-
     }
 )
-# dependancies.pd.set_option('display.max_colwidth', None)
+
+dependancies.pd.set_option('display.max_colwidth', None)
+print(dataset)
 
 # -> WordCloud Analysis
 for i in emotionList: # Itesrating through the emotions to make a wordcloud for each emotion, will skip if no words are present
