@@ -23,6 +23,10 @@
 7) https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
 8) https://getstream.io/blog/conversational-ai-flutter/
 
+## For BlenderBOT 400M
+1) https://github.com/huggingface/transformers/issues/9365
+2) https://huggingface.co/docs/transformers/model_doc/blenderbot and or /blenderbot-small (I think the normal one will suffice anyways)
+
 ## - For the input understanding 
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
