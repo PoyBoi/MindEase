@@ -7,6 +7,25 @@
 5) Get atleast 50 column entries
 6) Make a model that predicts the illness based off data points, and for this i think random forest might be the best bet going forward, it basically is decision tree but better, and we need a model that would use mutliple and not so well connected data points to work well together, and RF does it best for us
 
+## Project To-do's:
+1) ~https://huggingface.co/blog/sentiment-analysis-python;~
+2) Start with tokenisation ideation and how to work with it
+3) Make a model that predicts depression and other stuff based on rating on the emotion scale
+4) Start on the NLP front for making believeable conversations, implent ideas from todolist app // Use chatGPT's API
+5) ~Need to download tf.model.h5, it's 1 gig~
+6) ~Need to make a listed dictionary of emotions based on their importance per inputText, and then sort them, and be able to show the topmost emotion as the prevalant emotion~
+7) ~Figure out the iteration scenario with the input model and sort out the situation with the scoresList (We can instead just call the function on an interation)~
+8) ~Figure out how to associate words with emotions and then make a wordcloud of the most common words associated with the emotion~
+9) ~Make a wordcloud of the main words associated with positive and negative emotions in that specific text~
+10) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation // use detailed tree structure to make it understand the context of the conversation
+11) Understand how the wordcloud works and based on start with tokenization
+12) I need to find a way to change the AI's name
+13) I need to finf a way to make the AI be more professional, and when time comes to be, i need for it to be more relaxed and chill
+14) I need to find a way to make the AI be better at keeping context
+15) Need to find a way to inject emotions into the conversation, and make it more natural
+16) Need to find a way to extract information like names and stuff
+17) Need to find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
+
 ## - For the NLP
 1) Find out whether to use new or old model for the talking part
 2) Find dataset to train off of
@@ -31,6 +50,25 @@
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
 3) Make different and solo definitions out of each function, so that it helps in the expansion of the code
+
+## How to change the name of the bot:
+
+You can give your custom name to Blenderbot by modifying the config.json file of the pretrained model. Here's how you can do it:
+
+First, locate the directory where the pretrained model is saved. For example, if you're using the Blenderbot 400M model, the directory may be facebook/blenderbot-400M-distill.
+In that directory, find the config.json file and open it in a text editor.
+Look for the name parameter in the file. It should be a string that represents the name of the model.
+Change the value of the name parameter to the name you want to give to the model. For example, you could change it to "My Custom Blenderbot".
+Save the config.json file and exit the text editor.
+You can now use the modified model with your custom name in your Python code by calling the from_pretrained() method of the appropriate tokenizer and model classes, like this:
+```python
+from transformers import BlenderbotForConditionalGeneration, BlenderbotTokenizer
+
+model_name_or_path = "path/to/modified/model"
+tokenizer = BlenderbotTokenizer.from_pretrained(model_name_or_path)
+model = BlenderbotForConditionalGeneration.from_pretrained(model_name_or_path)
+Replace "path/to/modified/model" with the path to the directory where you saved the modified model. The tokenizer and model classes will now use the custom name you specified in the config.json file.
+```
 
 ## - How to work on privacy of data collected
 When collecting data from a chat conversation to feed into an AI-based counselor, it's important to collect only the minimum amount of data necessary to provide the counselor's functionality. Here are some ways you can do this:
@@ -76,19 +114,6 @@ There are several services that you can use for secure storage of login details 
 In addition to these cloud-based storage options, there are also other third-party storage providers like MongoDB Atlas, Firebase, and DigitalOcean that provide secure storage services.
 
 It's important to evaluate each service based on your specific needs and requirements, including factors like data volume, performance, scalability, and cost. Additionally, you should also consider the security features and certifications offered by each service to ensure that they meet your security standards.
-
-## Project To-do's:
-1) ~https://huggingface.co/blog/sentiment-analysis-python;~
-2) Start with tokenisation ideation and how to work with it
-3) Make a model that predicts depression and other stuff based on rating on the emotion scale
-4) Start on the NLP front for making believeable conversations, implent ideas from todolist app // Use chatGPT's API
-5) ~Need to download tf.model.h5, it's 1 gig~
-6) ~Need to make a listed dictionary of emotions based on their importance per inputText, and then sort them, and be able to show the topmost emotion as the prevalant emotion~
-7) ~Figure out the iteration scenario with the input model and sort out the situation with the scoresList (We can instead just call the function on an interation)~
-8) ~Figure out how to associate words with emotions and then make a wordcloud of the most common words associated with the emotion~
-9) ~Make a wordcloud of the main words associated with positive and negative emotions in that specific text~
-10) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation // use detailed tree structure to make it understand the context of the conversation
-11) Understand how the wordcloud works and based on start with tokenization
 
 ## In Project:
 ### In /SRC:
