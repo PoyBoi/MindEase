@@ -27,6 +27,7 @@
 17) Need to find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
 18) Need to connect the sentimental analysis with the NLP model and figure out injection
 19) Connection with the front end API, learn JSON and all that
+20) Need to make the sentimental analysis return -1, 0, 1 for negative, neutral, positive emotions portrayed in the text, so that the model can take heed for this
 
 ## For the Submission:
 
