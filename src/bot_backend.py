@@ -1,5 +1,6 @@
 import lib.dependancies as dependencies
 import src.analysis as analysis
+import os
 #have to work for the dependencies part wiith the above
 
 model_name = 'facebook/blenderbot-400M-distill'
@@ -23,6 +24,8 @@ def endCheck(text):
     
 def conversation():
     inputText, conversation, count = "", "", 0
+    clearScrn = 0
+
     while inputText != "exit":
 
         if inputText == "":
@@ -45,14 +48,10 @@ def conversation():
             #     user_name = conversation_context["user"]["name"]
             # response_text = tokenizer.decode(outputs[0], skip_special_tokens=True)
             # print(response_text, user_name)
-
+        if clearScrn == 0:
+            os.system('cls')
+            clearScrn = 1
         inputText = str(input("Human: \t"))
-        conversation += segregrate(inputText, "end")
-
-        # Using this as a way to selectively view logs
-        if inputText.startswith("log"):
-            print(conversation)
-            inputText.rstrip("log")
 
         # Running the sentimental analysis on the input text
         # to be even more efficient, we can use SA on the output to make sure that it is a good response, and if not, ask the 
@@ -62,6 +61,13 @@ def conversation():
             analysis.inputAnalysis(inputText)
         # If the user gives a sad response, make a primer for example as to how they are feeling, and as per how they respond to that, we can
         # make the AI ask the user how they are feeling, and through that answer can change the scope of the conversation
+
+        conversation += segregrate(inputText, "end")
+
+        # Using this as a way to selectively view logs
+        if inputText.startswith("log"):
+            print(conversation)
+            inputText.rstrip("log")
 
         # Need to add max_length and/or max_new_tokens so that i can work wioth longer conversations
 
