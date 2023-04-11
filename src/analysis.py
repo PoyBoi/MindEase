@@ -1,6 +1,6 @@
 # Calling all the imports
 import lib.dependancies as dependancies
-import input as inp
+import src.input as inp
 # Had to import this module as it wasn't working in dependancies.py
 from matplotlib import pyplot as plt
 
