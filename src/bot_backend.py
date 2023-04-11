@@ -1,5 +1,5 @@
 import lib.dependancies as dependencies
-import analysis as analysis
+import src.analysis as analysis
 #have to work for the dependencies part wiith the above
 
 model_name = 'facebook/blenderbot-400M-distill'
