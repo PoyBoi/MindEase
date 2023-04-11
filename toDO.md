@@ -25,6 +25,8 @@
 15) Need to find a way to inject emotions into the conversation, and make it more natural
 16) Need to find a way to extract information like names and stuff
 17) Need to find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
+18) Need to connect the sentimental analysis with the NLP model and figure out injection
+19) Connection with the front end API, learn JSON and all that
 
 ## For the Submission:
 
