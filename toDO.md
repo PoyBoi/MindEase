@@ -26,6 +26,12 @@
 16) Need to find a way to extract information like names and stuff
 17) Need to find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
 
+## For the Submission:
+
+1) Make a video
+2) Discuss the algortihm, and how it works
+3) Results : delivered scope
+
 ## - For the NLP
 1) Find out whether to use new or old model for the talking part
 2) Find dataset to train off of
