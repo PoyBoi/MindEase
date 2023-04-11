@@ -19,15 +19,17 @@
 9) ~Make a wordcloud of the main words associated with positive and negative emotions in that specific text~
 10) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation // use detailed tree structure to make it understand the context of the conversation
 11) Understand how the wordcloud works and based on start with tokenization
-12) I need to find a way to change the AI's name
-13) I need to finf a way to make the AI be more professional, and when time comes to be, i need for it to be more relaxed and chill
-14) I need to find a way to make the AI be better at keeping context
-15) Need to find a way to inject emotions into the conversation, and make it more natural
-16) Need to find a way to extract information like names and stuff
-17) Need to find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
+12) Find a way to change the AI's name (json file needs to be edited it seems)
+13) Find a way to make the AI be more professional, and when time comes to be, i need for it to be more relaxed and chill
+14) Find a way to make the AI be better at keeping context
+15) Find a way to inject emotions into the conversation, and make it more natural
+16) Find a way to extract information like names and stuff
+17) Find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
 18) Need to connect the sentimental analysis with the NLP model and figure out injection
 19) Connection with the front end API, learn JSON and all that
 20) Need to make the sentimental analysis return -1, 0, 1 for negative, neutral, positive emotions portrayed in the text, so that the model can take heed for this
+21) Sentimental analysis doesn't return correct emotion when taking in words that go with positive emotions but for example there is addition of "not", it doesn't work well, and often disregards the existance of the negative promptive word
+22) bB_t.py line 61
 
 ## For the Submission:
 
