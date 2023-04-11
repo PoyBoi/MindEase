@@ -30,6 +30,7 @@
 20) Need to make the sentimental analysis return -1, 0, 1 for negative, neutral, positive emotions portrayed in the text, so that the model can take heed for this
 21) Sentimental analysis doesn't return correct emotion when taking in words that go with positive emotions but for example there is addition of "not", it doesn't work well, and often disregards the existance of the negative promptive word
 22) bB_t.py line 61
+23) Fix error "ValueError: All arrays must be of the same length" in scripts.basicRun.py in like 3
 
 ## For the Submission:
 
