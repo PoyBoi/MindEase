@@ -142,6 +142,7 @@ It's important to evaluate each service based on your specific needs and require
 1) Try to use chatGPT's API to have the insertion for the chatbot
 
 ## Databases // Reading Sources
+
 1) https://www.kaggle.com/datasets/arashnic/the-depression-dataset
 2) https://data.world/datasets/depression (each link has a source file inside)
 3) https://datasets.simula.no/depresjon/
@@ -153,6 +154,7 @@ It's important to evaluate each service based on your specific needs and require
 9) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8675644/ (Child depression detection using ML, uses the YMM dataset)
 
 ## Project Pre-Requisites:
+
 1) Text Preprocessing: This involves cleaning, tokenizing, and normalizing the text to remove any noise, stop words, punctuation, and convert the text to a standardized format.
 2) Feature Extraction: In this step, you will need to convert the preprocessed text into numerical representations (features) that can be used by the machine learning algorithms. Common methods for feature extraction in NLP include Bag of Words, TF-IDF, Word2Vec, and GloVe.
 3) Machine Learning Algorithms: You will need to be familiar with different ML algorithms such as Decision Trees, Naive Bayes, Logistic Regression, and Neural Networks. You will also need to know how to train, validate, and test these models.
