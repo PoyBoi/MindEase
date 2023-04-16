@@ -173,6 +173,16 @@ To get started with these topics, you can take online courses such as "Natural L
 2) https://in.coursera.org/specializations/deep-learning#courses
 3) https://in.coursera.org/specializations/data-science-python#courses
 
+## Link Area
+1) [KoboldAI Collab](https://colab.research.google.com/github/KoboldAI/KoboldAI-Client/blob/main/colab/GPU.ipynb#scrollTo=lVftocpwCoYw)
+2) [Installation guide for above](https://www.youtube.com/watch?v=841tfxYYepM)
+3) [Dive into chatBots and Dialgoue systems](https://web.stanford.edu/~jurafsky/slp3/old_dec20/24.pdf)
+4) [Running PYG/Win no 8Bit](https://nemoia.ai/pages/pygmalion.html)
+5) [PYG/WIN 8Bit Discord Tutorial](https://discord.com/channels/849937185893384223/1059637856206852237/1059899112608235571)
+6) [Something else for the above, see if it helps](https://github.com/oobabooga/text-generation-webui/issues/20)
+7) [System Requirements](https://www.reddit.com/r/PygmalionAI/comments/10dj8gl/i_found_out_how_to_run_it_localy_with_kobold_ai/)
+8) [Another 8Bit Tut but using WSL](https://www.reddit.com/r/PygmalionAI/comments/10o0dfp/model_8bit_optimization_through_wsl/)
+
 ## - Database Metrics:
 
 1) Demographic Info:
