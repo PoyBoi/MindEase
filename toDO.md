@@ -32,6 +32,7 @@
 22) Sentimental analysis doesn't return correct emotion when taking in words that go with positive emotions but for example there is addition of "not", it doesn't work well, and often disregards the existance of the negative promptive word
 23) bB_t.py line 61
 24) Fix error "ValueError: All arrays must be of the same length" in scripts.basicRun.py in like 3
+25) Need to run install.bat and then follow the tutorial and download PYG 4bit, and see how it works w/o WSL
 
 ## For the Submission:
 
