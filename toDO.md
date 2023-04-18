@@ -184,6 +184,7 @@ To get started with these topics, you can take online courses such as "Natural L
 7) [System Requirements](https://www.reddit.com/r/PygmalionAI/comments/10dj8gl/i_found_out_how_to_run_it_localy_with_kobold_ai/)
 8) [Another 8Bit Tut but using WSL](https://www.reddit.com/r/PygmalionAI/comments/10o0dfp/model_8bit_optimization_through_wsl/)
 9) [Running PYG with 4.5G reddit tut](https://www.reddit.com/r/PygmalionAI/comments/129w4qh/how_to_run_pygmalion_on_45gb_of_vram_with_full/?q=windows&type=comment)
+10) [How to use LLaMa 4bit](https://github.com/xNul/chat-llama-discord-bot#llama-setup-normal8bit4bit-for-text-generation-webui)
 
 ## - Database Metrics:
 
