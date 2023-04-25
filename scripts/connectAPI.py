@@ -1,6 +1,5 @@
 import requests
 import json
-from flask import Flask, request, jsonify
 
 # app = Flask(__name__)
 
@@ -9,34 +8,6 @@ url_info = "/info/version"
 url_gen = "/generate"
 url_story = "/story/end"
 url_storyPull = "/story"
-
-# @app.route('/http://localhost:5000/api/v1', methods=['GET', 'PUT', 'POST', 'DELETE'])
-# def chat():
-#     # Get user input from frontend
-#     user_input = request.json.get('input')
-
-#     # AI model prompt
-#     prompt = f"Bot: Hi, how can I assist you today?\nUser: {user_input}\nBot:"
-
-#     # AI model parameters
-#     data = {
-#         "prompt": prompt,
-#         "max_tokens": 50,
-#         "temperature": 0.7,
-#     }
-
-#     # Send request to OpenAI API to generate a response
-#     headers = {
-#         "Content-Type": "application/json",
-#         "Authorization": "Bearer " + "YOUR_API_KEY"
-#     }
-#     response = requests.post(url_main+url_gen, data=json.dumps(data), headers=headers)
-#     response_json = response.json()
-#     chat_response = response_json["choices"][0]["text"].strip()
-
-#     # Return response to frontend
-#     return jsonify({'response': chat_response})
-
 
 worldInfo = ""
 
@@ -47,26 +18,26 @@ worldInfo = ""
 
 # response = requests.get(url_main+url_info)
 
-# 1) Little Interest or pleasure in doing things
-# 2) Feeling, down, depressed or hopeless
-# 3) Trouble falling or staying asleep, or sleeping too much
-# 4) Feeling tired or having little energy
-# 5) Poor appetite or overeating
-# 6) Feeling bad about yourself, or that you are failure or you have let yourself or your family down
-# 7) Trouble concentrating on things, such as reading the newspaper or watching television
-# 8) Moving or speaking so slowly that other people could have noticed. Or the opposite-being so fidgety or restless that you have been moving around a lot more that usual
-# 9) Thoughts that you would be better off dead, or of hurting yourself
-# 10) IF you have checked off any problems, how difficult have these problems made it for you to do your work, take case of things at home, or get along with other people?
+# Q) IF you have checked off any problems, how difficult have these problems made it for you to do your work, take case of things at home, or get along with other people?
+
+qList = [
+    "Have you noticed a lack of interest or pleasure in doing things in your day to day life ?", 
+    "Have you been feeling, down or hopeless recently ?",
+    "Do you have trouble falling or staying asleep, or do you sleep too much ?",
+    "Have you noticed feeling fatigued or having little energy throughout the day ?",
+    "Have you observed any changes in your eating habits, like eating too little or eating too much ?",
+    "Do you recurrently see yourself in a negative light, or feel like you're letting people around you down ?",
+    "Do you struggle with maintaining focus during passive activities, like reading or watching the TV",
+    "Have people pointed out that you move sluggishly, or on the contrary, are very fidgety or restless ?",
+    "Have you ever had thought about self harm ?"
+    ]
+
+qListRange = len(qList)
 
 headers = {'Content-type': 'application/json', 'accept': 'application/json'} # <- And this line
 
-print("""
-Bot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey.
-Bot:\tLet's start with the basics, shall we ?
-""")
-
 def userInput():
-    storyInfo = "Bot is a therapist. User is a patient at his clinic. This is a formal yet mepathetic setting. User has come in for a depression check up. \nBot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
+    storyInfo = "Bot is a therapist. Bot is a female. Bot's name is 'Joi'. 'Joi' is short for Joanna. User is a patient at his clinic. This is a formal yet empathetic setting. User has come in for a depression check up. Bot makes sure to make User feel at home. Bot refers to User as 'you'. Bot is very temperate, patient. Bot does not treat User as a child, but rather as an adult. \nBot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
     storyInput = str(input("User:\t"))
     userPrompt = {
         "prompt": storyInfo+ "\nUser: " + storyInput + "\nBot: ",
@@ -79,8 +50,11 @@ def userInput():
     # print(storyInfo)
     # setting the prompt to send up for generation
     response = requests.post(url_main+url_gen, data=json.dumps(userPrompt), headers=headers) # <-this line
-    ae = response.text[23:-5]
+    ae = response.text[22:-5]
     print("\nBot: ", ae, "\n") # <- This line
+
+def test():
+    print("Working")
 
 def storySet():
     # Doesn't work
@@ -93,6 +67,13 @@ def storySet():
     response = requests.get(url_main+url_storyPull, headers=headers)
     print(response)
 
-while(True):
-    userInput()
-    # chat()
+def chat():
+    print("""
+Bot:\tWelcome to mindEase ! My name is Joi and I'll be your guide on this journey.
+Bot:\tLet's start with the basics, shall we ?
+Bot:\tBefore we start, I'd like to get to know you better
+    """)
+    while True:
+        userInput()
+
+chat()
