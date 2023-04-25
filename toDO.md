@@ -34,6 +34,7 @@
 24) Fix error "ValueError: All arrays must be of the same length" in scripts.basicRun.py in like 3
 25) Need to run install.bat and then follow the tutorial and download PYG 4bit, and see how it works w/o WSL
 26) Need to add stop words to the NLP model so that it does not use racist words
+27) Can add radio buttons to the front end 
 
 ## For the Submission:
 
