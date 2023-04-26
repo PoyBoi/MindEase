@@ -37,7 +37,7 @@ qListRange = len(qList)
 headers = {'Content-type': 'application/json', 'accept': 'application/json'} # <- And this line
 
 def userInput():
-    storyInfo = "Bot is a therapist. Bot is a female. Bot's name is 'Joi'. 'Joi' is short for Joanna. User is a patient at his clinic. This is a formal yet empathetic setting. User has come in for a depression check up. Bot makes sure to make User feel at home. Bot refers to User as 'you'. Bot is very temperate, patient. Bot does not treat User as a child, but rather as an adult. \nBot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
+    storyInfo = "Bot is a therapist. Bot is a female. Bot's name is 'Joi'. 'Joi' is short for Joanna. User is a patient at her clinic. This is a professional yet empathetic setting. User has come in for a mental health check up. Bot makes sure to make User feel at home. Bot refers to User as 'you'. Bot and user do not take physical actions or reactions. Bot is very patient. Bot does not treat User as a child, but rather as an adult. \nBot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
     storyInput = str(input("User:\t"))
     userPrompt = {
         "prompt": storyInfo+ "\nUser: " + storyInput + "\nBot: ",
@@ -50,7 +50,7 @@ def userInput():
     # print(storyInfo)
     # setting the prompt to send up for generation
     response = requests.post(url_main+url_gen, data=json.dumps(userPrompt), headers=headers) # <-this line
-    ae = response.text[22:-5]
+    ae = response.text[21:-5]
     print("\nBot: ", ae, "\n") # <- This line
 
 def test():

@@ -1,19 +1,18 @@
-import connectAPI as connect
 from flask import Flask, request, jsonify
+import requests
 
 app = Flask(__name__)
 
-@app.route('/myPythonFile.py', methods=['POST'])
-def my_python_function():
-  data = request.get_json()
-  input_value = data['input']
-  # do something with input_value
-  print(input_value)
-  return jsonify({'result': 'success'})
+@app.route('/receive_message', methods=['POST', 'GET'])
+def receive_message():
+    data = request.get_json()
+    #resp = requests.get("http://127.0.0.1:8000/receive_message")
+    # data = resp.json()
+    message = data['message']
+    return "Success"
 
 if __name__ == '__main__':
-    app.run()
-
+    app.run(host = "localhost", port=8000, debug = True)
 
 
 # @app.route('/http://localhost:5000/api/v1', methods=['GET', 'PUT', 'POST', 'DELETE'])
