@@ -17,74 +17,51 @@
 7) ~Figure out the iteration scenario with the input model and sort out the situation with the scoresList (We can instead just call the function on an interation)~
 8) ~Figure out how to associate words with emotions and then make a wordcloud of the most common words associated with the emotion~
 9) ~Make a wordcloud of the main words associated with positive and negative emotions in that specific text~
-10) Try to use Pygmalion AI to have the conversation, it's fine if it is jackedvia google cloud
-11) Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation // use detailed tree structure to make it understand the context of the conversation
+10) ~Try to use Pygmalion AI to have the conversation, it's fine if it is jacked via google cloud~
+11) ~Start to learn how to teach the AI to contextualize in a conversation, use a detailed tree structure to make it understand the context of the conversation // use detailed tree structure to make it understand the context of the conversation~
 12) Understand how the wordcloud works and based on start with tokenization
-13) Find a way to change the AI's name (json file needs to be edited it seems)
-14) Find a way to make the AI be more professional, and when time comes to be, i need for it to be more relaxed and chill
-15) Find a way to make the AI be better at keeping context
-16) Find a way to inject emotions into the conversation, and make it more natural
+13) ~Find a way to change the AI's name (json file needs to be edited it seems)~
+14) ~Find a way to make the AI be more professional, and when time comes to be, i need for it to be more relaxed and chill~
+15) ~Find a way to make the AI be better at keeping context~
+16) ~Find a way to inject emotions into the conversation, and make it more natural~
 17) Find a way to extract information like names and stuff
 18) Find a way to inject the questions into the conversation naturally without messing up the flow of the conversation
 19) Need to connect the sentimental analysis with the NLP model and figure out injection
-20) Connection with the front end API, learn JSON and all that
+20) ~Connection with the front end API, learn JSON and all that~
 21) Need to make the sentimental analysis return -1, 0, 1 for negative, neutral, positive emotions portrayed in the text, so that the model can take heed for this
 22) Sentimental analysis doesn't return correct emotion when taking in words that go with positive emotions but for example there is addition of "not", it doesn't work well, and often disregards the existance of the negative promptive word
-23) bB_t.py line 61
-24) Fix error "ValueError: All arrays must be of the same length" in scripts.basicRun.py in like 3
-25) Need to run install.bat and then follow the tutorial and download PYG 4bit, and see how it works w/o WSL
-26) Need to add stop words to the NLP model so that it does not use racist words
-27) Can add radio buttons to the front end 
+23) ~bB_t.py line 61~
+24) ~Fix error "ValueError: All arrays must be of the same length" in scripts.basicRun.py in like 3~
+25) ~Need to run install.bat and then follow the tutorial and download PYG 4bit, and see how it works w/o WSL~
+26) Need to add stop words to the NLP model so that it does not use racist words and responses
+27) Make a function that goes through the bot's response to see what it's asking and if it's relevant, to then add it to the info dictionary
+28) Need to add ignore for pycache's
+29) Need to add attention mask, pad token ID, 
+30) Can add a mood selector that deploys a different story setting based on the user preference
 
-## For the Submission:
+## ~For the Submission:~
 
-1) Make a video
-2) Discuss the algortihm, and how it works
-3) Results : delivered scope
+1) ~Make a video~
+2) ~Discuss the algortihm, and how it works~
+3) ~Results : delivered scope~
 
 ## - For the NLP
-1) Find out whether to use new or old model for the talking part
+1) ~Find out whether to use new or old model for the talking part~
 2) Find dataset to train off of
-3) Use chatGPT's API to make the chatbot, it says that we can modify the APi call to fit our needs, paraphrasing:
->For example, you can control the length and type of responses, the amount of context I use to generate responses, and the level of 
->creativity or randomness in my responses. You can also fine-tune my language generation by providing specific prompts or examples that 
->I can learn from. Additionally, you can use programming languages such as Python or JavaScript to create custom scripts or wrappers 
->around the OpenAI API to further modify and tailor the responses you receive. Overall, the OpenAI API provides a lot of flexibility 
->and customization options, so you can integrate me in a way that best meets the needs of your project. If you have specific 
->requirements or questions about how to modify my behavior, feel free to ask and I'll do my best to assist you.
-4) In general, the attribution should include the OpenAI logo and a statement that your project is "Powered by OpenAI." You may also be required to include additional attribution depending on the type and frequency of your usage.
+3) ~Use chatGPT's API to make the chatbot, it says that we can modify the APi call to fit our needs, paraphrasing:~
+4) ~In general, the attribution should include the OpenAI logo and a statement that your project is "Powered by OpenAI." You may also be required to include additional attribution depending on the type and frequency of your usage.~
 5) https://huggingface.co/PygmalionAI/pygmalion-6b/tree/main
-6) https://huggingface.co/facebook/blenderbot-400M-distill?text=Hey+my+name+is+Julien%21+How+are+you%3F
-7) https://medium.com/huggingface/how-to-build-a-state-of-the-art-conversational-ai-with-transfer-learning-2d818ac26313
-8) https://getstream.io/blog/conversational-ai-flutter/
+6) ~https://huggingface.co/facebook/blenderbot-400M-distill?text=Hey+my+name+is+Julien%21+How+are+you%3F~
+7) https://getstream.io/blog/conversational-ai-flutter/
 
-## For BlenderBOT 400M
-1) https://github.com/huggingface/transformers/issues/9365
-2) https://huggingface.co/docs/transformers/model_doc/blenderbot and or /blenderbot-small (I think the normal one will suffice anyways)
+## ~For BlenderBOT 400M~
 
 ## - For the input understanding 
 1) Train the model to understand certain keywords
 2) Teach it to relate keywords to moods (Sentiment Analysis, Mood Analysis)
 3) Make different and solo definitions out of each function, so that it helps in the expansion of the code
 
-## How to change the name of the bot:
-
-You can give your custom name to Blenderbot by modifying the config.json file of the pretrained model. Here's how you can do it:
-
-First, locate the directory where the pretrained model is saved. For example, if you're using the Blenderbot 400M model, the directory may be facebook/blenderbot-400M-distill.
-In that directory, find the config.json file and open it in a text editor.
-Look for the name parameter in the file. It should be a string that represents the name of the model.
-Change the value of the name parameter to the name you want to give to the model. For example, you could change it to "My Custom Blenderbot".
-Save the config.json file and exit the text editor.
-You can now use the modified model with your custom name in your Python code by calling the from_pretrained() method of the appropriate tokenizer and model classes, like this:
-```python
-from transformers import BlenderbotForConditionalGeneration, BlenderbotTokenizer
-
-model_name_or_path = "path/to/modified/model"
-tokenizer = BlenderbotTokenizer.from_pretrained(model_name_or_path)
-model = BlenderbotForConditionalGeneration.from_pretrained(model_name_or_path)
-Replace "path/to/modified/model" with the path to the directory where you saved the modified model. The tokenizer and model classes will now use the custom name you specified in the config.json file.
-```
+## ~How to change the name of the bot:~
 
 ## - How to work on privacy of data collected
 When collecting data from a chat conversation to feed into an AI-based counselor, it's important to collect only the minimum amount of data necessary to provide the counselor's functionality. Here are some ways you can do this:
