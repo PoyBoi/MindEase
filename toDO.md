@@ -2,10 +2,10 @@
 ## - For the Prediction Model
 1) ~Add word doc to repo~
 2) ~Find out the basic data points for the dataset~
-3) Make a questionare for the data input (training)
+3) ~Make a questionare for the data input (training)~
 4) Start surveying people
 5) Get atleast 50 column entries
-6) Make a model that predicts the illness based off data points, and for this i think random forest might be the best bet going forward, it basically is decision tree but better, and we need a model that would use mutliple and not so well connected data points to work well together, and RF does it best for us
+6) ~Make a model that predicts the illness based off data points, and for this i think random forest might be the best bet going forward, it basically is decision tree but better, and we need a model that would use mutliple and not so well connected data points to work well together, and RF does it best for us~
 
 ## Project To-do's:
 1) ~https://huggingface.co/blog/sentiment-analysis-python;~
