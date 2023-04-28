@@ -38,6 +38,7 @@
 28) Need to add ignore for pycache's
 29) Need to add attention mask, pad token ID, 
 30) Can add a mood selector that deploys a different story setting based on the user preference
+31) Need to make the git repo more clean, need to clean up readme and todo's
 
 ## ~For the Submission:~
 
