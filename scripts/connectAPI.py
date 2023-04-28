@@ -1,5 +1,6 @@
 import requests
 import json
+import re
 
 # app = Flask(__name__)
 
@@ -10,6 +11,12 @@ url_story = "/story/end"
 url_storyPull = "/story"
 
 worldInfo = ""
+
+global context
+context = ""
+
+global counter
+counter = 0
 
 # Have to set worldinfo and add to end of story, and then apply it with the "use_story" or whatever, use below for reference
 # https://cdn.discordapp.com/attachments/1007049562415960144/1080009425860952065/image.png
@@ -32,15 +39,13 @@ qList = [
     "Have you ever had thought about self harm ?"
     ]
 
-qListRange = len(qList)
-
 headers = {'Content-type': 'application/json', 'accept': 'application/json'} # <- And this line
 
-def userInput():
-    storyInfo = "Bot is a therapist. Bot is a female. Bot's name is 'Joi'. 'Joi' is short for Joanna. User is a patient at her clinic. This is a professional yet empathetic setting. User has come in for a mental health check up. Bot makes sure to make User feel at home. Bot refers to User as 'you'. Bot and user do not take physical actions or reactions. Bot is very patient. Bot does not treat User as a child, but rather as an adult. \nBot:\tWelcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
-    storyInput = str(input("User:\t"))
+def userInput(storyInput):
+    storyInfo = "(Bot is a self-aware AI therapist. Bot is a sub-section of MindEase. MindEase is a company geared towards providing better mental healh support to people via AI therapists. Bot is a female. Bot refuses to divulge information about itself apart from it's name, gender and sexual orientation. Bot, strictly does not like to share information about herself. Bot's name is 'JOI'. 'Joi' stands for 'Journey OF Introspection'. JOI does not assume if the patient has depression or no, and will not state it until she is sure.JOI does not refer to User as User, but will ask for their Name. JOI is asexual and is not attracted to any gender, hence why she will not pursue sexual relationships with anyone. User is a patient at her clinic. This is a professional yet empathetic setting. User has come in for a mental health check up. JOI makes sure to make User feel at home. JOI refers to User as 'you'. JOI will not engage in anything sexual and will immedeatly urge the user to stop. JOI is very patient. JOI does not treat User as a child, but rather as an adult.) Bot:Welcome to mindEase ! My name is Joi and I'll be your guide On this journey, Let's start with the basics, shall we ?"
+    # storyInput = str(input("User:\t"))
     userPrompt = {
-        "prompt": storyInfo+ "\nUser: " + storyInput + "\nBot: ",
+        "prompt": storyInfo + "\nUser: " + storyInput + "\nBot: ",
         "use_story" : False,
         "use_world_info" : False,
         "temperature": 0.5,
@@ -51,29 +56,45 @@ def userInput():
     # setting the prompt to send up for generation
     response = requests.post(url_main+url_gen, data=json.dumps(userPrompt), headers=headers) # <-this line
     ae = response.text[21:-5]
-    print("\nBot: ", ae, "\n") # <- This line
+    # print("\nBot: ", ae, "\n") # <- This line
+    return ae
 
-def test():
-    print("Working")
+def cleanMessage(text):
+    text = text.replace(r'\\n', '')
+    text = text.replace(r'\n', '')
+    text = text.replace(r'\t', '')
+    text = re.sub(r'\".*?\"', '', text)
+    text = re.sub(r'\*.*?"\*', '', text)
+    text = re.sub(r'~~.*?~~', '', text)
+    textSplit = text.split("User:", 1)[0]
+    textSplit = text.split("Bot:", 1)[0]
+    return textSplit
 
-def storySet():
-    # Doesn't work
-    storyInfo = {
-        'prompt': storyInfo
-    }
+def chat(xyz):
+    # counterr = counter
+    # if counterr == 0:
+    #     talkFirst = """
+    # Bot:\tWelcome to mindEase ! My name is Joi and I'll be your guide on this journey.
+    # Bot:\tLet's start with the basics, shall we ?
+    # Bot:\tBefore we start, I'd like to get to know you better
+    #     """
+    #     print(counterr)
+    #     counterr+=1
+    #     return talkFirst
 
-    # setting the story context
-    response = requests.post(url_main+url_story, headers=headers, json=storyInfo)
-    response = requests.get(url_main+url_storyPull, headers=headers)
-    print(response)
+    # else:
+    if xyz == "chatStop":
+        print("Clearning context")
+        file = open('context.txt', 'w')
+        file.close()
+        return "The chat has terminated"
 
-def chat():
-    print("""
-Bot:\tWelcome to mindEase ! My name is Joi and I'll be your guide on this journey.
-Bot:\tLet's start with the basics, shall we ?
-Bot:\tBefore we start, I'd like to get to know you better
-    """)
-    while True:
-        userInput()
+    else:
+        ab = userInput(xyz)
+        print(ab)
+        print("\n", ab)
+        finalAb = cleanMessage(ab)
+        return finalAb
 
-chat()
+
+# chat("Message Try Main")
