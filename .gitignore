@@ -1,2 +1,3 @@
 # .gitignore file
+# need to add ignore for pycache's
 context.txt
