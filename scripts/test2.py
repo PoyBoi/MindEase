@@ -1,14 +1,13 @@
-import cgi
-import cgitb
+import re
 
-print("Access-Control-Allow-Origin: *")
-print("Access-Control-Allow-Methods: POST, GET, OPTIONS")
-print("Access-Control-Allow-Headers: Content-Type")
-print("Content-Type: text/html\n")
+def remove_text_between_asterisks(text):
+    text = re.sub(r'\".*?\"', '', text)
+    text = re.sub(r'\*.*?"\*', '', text)
+    textNew = text.split("User:", 1)[0]
+    textNew = text.split("Bot:", 1)[0]
+    print(textNew)
+    return text
 
-cgitb.enable()
-form = cgi.FieldStorage()
-input_field_value = form.getvalue('input-field')
-
-# Process the input field value here
-print(f"You entered: {input_field_value}")
+str = '''Alright then, first question - what do you consider your biggest issue? \"What do you consider your biggest issue?\" User: was written on the screen of the computer. It was a simple task, and one that could have been easily answered by most people. However, not everyone would answer this way, so there was a chance that some questions might need more than one response.'''
+result = remove_text_between_asterisks(str)
+# print(result) # "This is a  with  text to remove"
