@@ -1,0 +1,150 @@
+body {
+    font-family: 'Inter', sans-serif;;
+    margin: 0;
+    background-color: #F3E5E5;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  h1 {
+    font-size: 65px;
+    word-spacing: 10px;
+  }
+
+  .about-section about {
+    max-width: 40%;
+    text-align: center;
+  }
+
+  .about {
+    font-size: 20px;
+    margin-right: 140px;
+    margin-left: 140px;
+    line-height: 27px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  
+  .left-column {
+    float: left;
+    width: 20%;
+    margin-bottom: 70px;
+    padding: 0 8px;
+    margin-left : 20%;
+  }
+
+  .right-column {
+    float: right;
+    width: 20%;
+    margin-bottom: 70px;
+    padding: 0 8px;
+    margin-right: 20%;
+  }
+
+  .row1 {
+    margin-top: 5%
+  }
+
+  .row1 img{
+    width: 90%;
+    height: auto;
+    padding-left: 55px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: -10px;
+  }
+
+  .row2 img{
+    width: 90%;
+    height: auto;
+    padding-left: 55px;
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: -10px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    background-color: white;
+    border-radius: 12px;
+  }
+
+  .names {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    background-color: #DB9A9A;
+    color: white;
+    border-bottom-left-radius: 200px ;
+    border-bottom-right-radius: 200px ;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #FF8F8F;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  /* .fa-solid{
+    margin-left: -1700px;
+    margin-top: -1000px;
+  } */
+
+  .fa-solid {
+    margin-left: -1600px;
+    margin-top: 50px;
+  }
