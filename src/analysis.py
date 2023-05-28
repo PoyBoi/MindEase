@@ -133,4 +133,4 @@ def wordCloudAnalysis(emotionList, dataset):
             pass
 
 #__main__
-# inputAnalysis("I am not doing well.")
+inputAnalysis("I like penguins !")
