@@ -1,0 +1,56 @@
+number,days,gender,age,afftype,melanch,inpatient,edu,marriage,work,madrs1,madrs2
+condition_1,11,2,35-39,2,2,2,6-10,1,2,19,19
+condition_2,18,2,40-44,1,2,2,6-10,2,2,24,11
+condition_3,13,1,45-49,2,2,2,6-10,2,2,24,25
+condition_4,13,2,25-29,2,2,2,11-15,1,1,20,16
+condition_5,13,2,50-54,2,2,2,11-15,2,2,26,26
+condition_6,7,1,35-39,2,2,2,6-10,1,2,18,15
+condition_7,11,1,20-24,1,NA,2,11-15,2,1,24,25
+condition_8,5,2,25-29,2,NA,2,11-15,1,2,20,16
+condition_9,13,2,45-49,1,NA,2,6-10,1,2,26,26
+condition_10,9,2,45-49,2,2,2,6-10,1,2,28,21
+condition_11,14,1,45-49,2,2,2,6-10,1,2,24,24
+condition_12,12,2,40-44,1,2,2,6-10,2,2,25,21
+condition_13,14,2,35-39,1,2,2,11-15,2,2,18,13
+condition_14,14,1,60-64,1,2,2,6-10,2,2,28,19
+condition_15,13,2,55-59,2,2,2,11-15,1,1,14,18
+condition_16,16,1,45-49,2,2,2,11-15,1,2,13,17
+condition_17,13,1,50-54,1,2,2,6-10,1,2,17,15
+condition_18,13,2,40-44,3,2,2,11-15,2,2,18,15
+condition_19,13,2,50-54,2,2,1,16-20,2,2,26,21
+condition_20,13,1,30-34,2,1,1,6-10,1,2,27,25
+condition_21,13,2,35-39,2,2,1,6-10,2,2,26,21
+condition_22,14,1,65-69,2,2,1, ,2,2,29,28
+condition_23,16,1,30-34,2,2,1,16-20,2,2,29,23
+control_1,8,2,25-29,NA,NA,NA,,NA,NA,NA,NA
+control_2,20,1,30-34,NA,NA,NA, ,NA,NA,NA,NA
+control_3,12,2,30-34,NA,NA,NA, ,NA,NA,NA,NA
+control_4,13,1,25-29,NA,NA,NA, ,NA,NA,NA,NA
+control_5,13,1,30-34,NA,NA,NA, ,NA,NA,NA,NA
+control_6,13,1,25-29,NA,NA,NA, ,NA,NA,NA,NA
+control_7,13,1,20-24,NA,NA,NA, ,NA,NA,NA,NA
+control_8,13,2,40-44,NA,NA,NA, ,NA,NA,NA,NA
+control_9,13,2,30-34,NA,NA,NA, ,NA,NA,NA,NA
+control_10,8,1,30-34,NA,NA,NA, ,NA,NA,NA,NA
+control_11,13,1,45-49,NA,NA,NA, ,NA,NA,NA,NA
+control_12,14,1,60-64,NA,NA,NA, ,NA,NA,NA,NA
+control_13,13,1,50-54,NA,NA,NA,,NA,NA,NA,NA
+control_14,13,1,50-54,NA,NA,NA, ,NA,NA,NA,NA
+control_15,11,1,45-49,NA,NA,NA, ,NA,NA,NA,NA
+control_16,13,2,40-44,NA,NA,NA, ,NA,NA,NA,NA
+control_17,9,1,45-49,NA,NA,NA, ,NA,NA,NA,NA
+control_18,13,2,20-24,NA,NA,NA, ,NA,NA,NA,NA
+control_19,13,1,50-54,NA,NA,NA, ,NA,NA,NA,NA
+control_20,13,1,35-39,NA,NA,NA, ,NA,NA,NA,NA
+control_21,8,1,50-54,NA,NA,NA, ,NA,NA,NA,NA
+control_22,13,1,25-29,NA,NA,NA, ,NA,NA,NA,NA
+control_23,13,1,20-24,NA,NA,NA, ,NA,NA,NA,NA
+control_24,13,2,20-24,NA,NA,NA, ,NA,NA,NA,NA
+control_25,13,1,65-69,NA,NA,NA, ,NA,NA,NA,NA
+control_26,13,1,35-39,NA,NA,NA, ,NA,NA,NA,NA
+control_27,13,2,50-54,NA,NA,NA, ,NA,NA,NA,NA
+control_28,16,2,45-49,NA,NA,NA, ,NA,NA,NA,NA
+control_29,13,2,50-54,NA,NA,NA, ,NA,NA,NA,NA
+control_30,9,2,35-39,NA,NA,NA, ,NA,NA,NA,NA
+control_31,13,1,20-24,NA,NA,NA, ,NA,NA,NA,NA
+control_32,14,2,25-29,NA,NA,NA, ,NA,NA,NA,NA
